@@ -1,0 +1,48 @@
+<!--start.wxml-->
+<import src="../template/item-classification.wxml"/>
+
+    <!--分类栏-->
+      <scroll-view scroll-y="true" class="scroll_left">
+  
+        <view style="background: red; width: 100px; height: 100px" ></view>
+        <view style="background: green; width: 100px; height: 100px"></view>
+        <view style="background: blue; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: red; width: 100px; height: 100px" ></view>
+        <view style="background: green; width: 100px; height: 100px"></view>
+        <view style="background: blue; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: red; width: 100px; height: 100px" ></view>
+        <view style="background: green; width: 100px; height: 100px"></view>
+        <view style="background: blue; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+        <view style="background: yellow; width: 100px; height: 100px"></view>
+  
+      </scroll-view>
+  
+    <!--分类详情栏-->
+    <scroll-view scroll-y="true" class="scroll_right">
+
+      <view class="container_template">
+        <template is="item-classification"/>
+      </view>
+
+      <view class="container_template">
+        <template is="item-classification"/>
+      </view>
+
+      <view class="container_template">
+        <template is="item-classification"/>
+      </view>
+
+      <view class="container_template">
+        <template is="item-rclassification"/>
+      </view>
+
+    </scroll-view>

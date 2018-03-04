@@ -1,0 +1,34 @@
+.container_{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left:15rpx;
+  padding-right: 15rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx; 
+ 
+}
+
+.info{
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+
+  background-color: wheat;
+}
+
+.center_text{
+  align-items: center;
+  background-color: rebeccapurple;
+}
+
+.picture{
+  height: 85%;
+  width: 95%;
+}

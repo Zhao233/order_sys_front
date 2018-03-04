@@ -1,0 +1,17 @@
+<template name="item-classification">
+  <view class="container_">
+
+    <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2903730956,4222895621&fm=27&gp=0.jpg" class="picture" mode="aspectFill"></image>
+      
+    <view class="center_text">
+      <text >special</text>
+    </view>
+
+    <view class="info">
+      <text>20$/per</text>
+
+      <button></button>
+    </view>
+  </view>
+
+</template>

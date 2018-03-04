@@ -1,0 +1,42 @@
+@import "../template/item-classification.wxss";
+
+/* pages/classification.wxss */
+.nav_left{  
+  height: 100%;
+  width: 25%;
+} 
+
+.nav_left_items{  
+  /*每个高30px*/  
+  height: 50px;  
+  /*垂直居中*/  
+  line-height: 50px;  
+  /*再设上下padding增加高度，总高42px*/  
+  padding: 6px 0;  
+  /*只设下边线*/  
+  border-bottom: 1px solid #dedede;  
+  /*文字14px*/  
+  font-size: 14px;  
+}  
+
+.container_template{
+  width: 95%;
+  height: 500rpx;
+
+  
+
+  padding-bottom: 20rpx;
+}
+
+.scroll_left{
+  height: 100%;
+  width: 25%;
+  float: left;
+  position: fixed;
+}
+
+.scroll_right{
+  height: 100%;
+  width: 75%;
+  float: right;
+}

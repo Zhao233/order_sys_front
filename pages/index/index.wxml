@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<import src="../template/item-index.wxml"/>
+
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <block wx:for="{{movies}}" wx:for-index="index">    
+        <swiper-item>    
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      </block>    
+  </swiper>
+
+  <!--每日推荐-->
+  <view class="header">
+    <text class='text_recommend'>- 每日推荐 -</text> 
+  </view>
+
+  <!--推荐的菜品内容-->
+  <view class="layout_horizontal">
+
+    <block wx:for="{{recommend}}">
+      <template is="item" data="{{item}}"/>
+    </block>
+
+  </view>
