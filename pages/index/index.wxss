@@ -1,9 +1,12 @@
 /**index.wxss**/
 @import "../template/item-index.wxss";
+@import "../template/noticebar.wxss";
 
 .swiper {
   height: 400rpx;
   width: 100%;
+
+  padding-bottom: 20rpx;
 }
 .swiper image {
   height: 100%;
@@ -28,5 +31,11 @@
   justify-content: center;
 }
 
+.zan-panel{
+  position:relative;
+  background:#fff;
+  margin-top:10px;
+  overflow:hidden
+}
 
 
