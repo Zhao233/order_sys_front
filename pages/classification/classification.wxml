@@ -3,46 +3,26 @@
 
     <!--分类栏-->
       <scroll-view scroll-y="true" class="scroll_left">
-  
-        <view style="background: red; width: 100px; height: 100px" ></view>
-        <view style="background: green; width: 100px; height: 100px"></view>
-        <view style="background: blue; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: red; width: 100px; height: 100px" ></view>
-        <view style="background: green; width: 100px; height: 100px"></view>
-        <view style="background: blue; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: red; width: 100px; height: 100px" ></view>
-        <view style="background: green; width: 100px; height: 100px"></view>
-        <view style="background: blue; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-        <view style="background: yellow; width: 100px; height: 100px"></view>
-  
+
+        <block wx:for="{{classfiyList}}">
+          <view class="nav_left_items">
+            <text class="item_text" bindtap="getList" id="{{item.idenity_name}}">{{item.name}}</text>
+          </view>
+        </block>
+
       </scroll-view>
   
     <!--分类详情栏-->
     <scroll-view scroll-y="true" class="scroll_right">
 
-      <view class="container_template">
-        <template is="item-classification"/>
-      </view>
+      <block wx:for="{{children}}" >
 
-      <view class="container_template">
-        <template is="item-classification"/>
-      </view>
+        <view class="container_template">
+          <template is="item-classification" data="{{item}}"/>
+        </view>
 
-      <view class="container_template">
-        <template is="item-classification"/>
-      </view>
+      </block>
 
-      <view class="container_template">
-        <template is="item-rclassification"/>
-      </view>
+      
 
     </scroll-view>

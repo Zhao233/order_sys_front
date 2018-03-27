@@ -8,24 +8,25 @@
 
 .nav_left_items{  
   /*每个高30px*/  
-  height: 50px;  
+  height: 80px;  
   /*垂直居中*/  
-  line-height: 50px;  
+  line-height: 80px;  
   /*再设上下padding增加高度，总高42px*/  
   padding: 6px 0;  
   /*只设下边线*/  
   border-bottom: 1px solid #dedede;  
   /*文字14px*/  
-  font-size: 14px;  
+  font-size: 20px;  
+  /*水平居中*/
+  text-align: center;
 }  
 
 .container_template{
   width: 95%;
   height: 500rpx;
 
-  
-
   padding-bottom: 20rpx;
+  padding-top: 20rpx;
 }
 
 .scroll_left{
@@ -39,4 +40,8 @@
   height: 100%;
   width: 75%;
   float: right;
+}
+
+.item_text{
+  align-content: center;
 }
